@@ -1,5 +1,18 @@
 import { extendTheme } from '@chakra-ui/react';
 
+import { Roboto } from 'next/font/google';
+
+const roboto = Roboto({
+    weight : ['400', '500', '700'],
+    subsets: ['latin']
+  });
+
+const fonts = {
+  heading: roboto.style.fontFamily,
+  body: roboto.style.fontFamily,
+};
+
+
 export const theme = extendTheme({
     colors: {
       gray: {
@@ -15,10 +28,7 @@ export const theme = extendTheme({
         '50': '#EEEEF2',
       },
     },
-    fonts: {
-      heading: 'Roboto',
-      body: 'Roboto',
-    },
+    fonts,
     styles: {
       global: {
         body: {
