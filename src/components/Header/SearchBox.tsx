@@ -1,9 +1,21 @@
 import { Flex, Icon, Input } from "@chakra-ui/react";
+import { useState } from "react";
 import { RiSearchLine } from "react-icons/ri";
 
-export function SearchBox() {
-    return (
+// Controlled components: Maneira de lidar com formulário
+// salvando a informação digitada pelo usuário com useState
 
+// Uncontrolled component: Acessar o valor do input apenas quando
+// realmente precisar, não armazena o valor e sim acessa no momento
+// que precisar utilizando useRef
+
+export function SearchBox() {
+    const [search, setSearch] = useState('');
+
+    // const searchInputRef = useRef<HTMLInputElement>(null);
+
+
+    return (
         <Flex
             as="label"
             flex="1"
@@ -25,6 +37,9 @@ export function SearchBox() {
                 _placeholder={{ color: 'gray.400' }}
                 px="4"
                 mr="4"
+                value={search}
+                onChange={event => setSearch(event.target.value)}
+                // ref={searchInputRef}
             />
 
             <Icon as={RiSearchLine} fontSize="20" />
