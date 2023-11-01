@@ -2,16 +2,16 @@
 
 import { SidebarDrawerProvider } from '@/contexts/SidebarDrawerContext';
 import { makeServer } from '@/services/mirage';
+import { queryClient } from '@/services/queryClient';
 import { theme } from '@/styles/theme';
 import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider } from '@chakra-ui/react';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import { QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
 
 if (process.env.NODE_ENV === 'development') {
     makeServer();
 }
-
-const queryClient = new QueryClient();
 
 export default function RootLayout({
     children,
@@ -29,6 +29,7 @@ export default function RootLayout({
                         </SidebarDrawerProvider>
                     </ChakraProvider>
                 </CacheProvider>
+                <ReactQueryDevtools />
                 </QueryClientProvider>
             </body>
         </html>
