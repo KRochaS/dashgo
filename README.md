@@ -38,33 +38,43 @@ to create a local data caching layer, with backend pagination using MirageJS, an
   - [x] The use of a declarative interface framework 
   - [x] Pagination in the user listing.
   - [x] React Query
-     - [x] 
-
-
-
+     - [x] Refetching Data
+     - [x] Prefetching Data
+     - [x] Mutations and cache invalidate.
+     - [x] Server-Side Rendering (SSR)
+  - [x] Listing Hook 
 
 ## :computer:  WEB Layout
 
 <p align="center">
-   <img src="" width="986" >
-   <img src="" width="986" >
+   <img src="https://github.com/KRochaS/dashgo/blob/master/.github/screenshot-01.png" width="986" >
+   <img src="https://github.com/KRochaS/dashgo/blob/master/.github/screenshot-02.png" width="986" >
+  <img src="https://github.com/KRochaS/dashgo/blob/master/.github/screenshot-03.png" width="986" >
 </p>
 
 ## 📱:  Mobile Layout
 
-<p align="center">
-   <img src="" width="986" >
-   <img src="" width="986" >
+<p>
+  <img src="https://github.com/KRochaS/dashgo/blob/master/.github/screenshot-04.png" width="300" >
+   <img src="https://github.com/KRochaS/dashgo/blob/master/.github/screenshot-05.png" width="300" >
+   <img src="https://github.com/KRochaS/dashgo/blob/master/.github/screenshot-06.png" width="190" >
+   <img src="https://github.com/KRochaS/dashgo/blob/master/.github/screenshot-07.png" width="300" >
 </p>
 
+## 	:cherry_blossom:  React Query Funcionality
+<p>
+  <img src="https://github.com/KRochaS/dashgo/blob/master/.github/screenshot-08.png" width="986" >
+   <img src="https://github.com/KRochaS/dashgo/blob/master/.github/pagination.gif" width="986" >
+   <img src="https://github.com/KRochaS/dashgo/blob/master/.github/details.gif" width="986" >
+</p>
 
 #### how to run the project: 
 ```bash
 #  Clone this repository.
-$ git clone https://github.com/KRochaS/NextLevelWeek13
+$ git clone https://github.com/KRochaS/dashgo
 
 # Navigate to the project folder in the terminal/cmd.
-$ cd web/
+$ cd dashgo/
 
 # Install the dependencies.
 $ npm i ou yarn install
@@ -72,6 +82,6 @@ $ npm i ou yarn install
 # Run the project
 $ npm run dev
 
-# http://localhost:5173/
+# http://localhost:3000
 ```
 
