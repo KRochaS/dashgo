@@ -3,6 +3,10 @@
   <br/>
   <br/>
   <img src="https://github.com/KRochaS/dashgo/blob/master/.github/dashgo..svg" width="190" >
+  <br/>
+  <br/>
+  <img src="https://github.com/KRochaS/dashgo/blob/master/.github/chapter-iv.svg" width="130" >
+   
 </p>
 
 <br/>
